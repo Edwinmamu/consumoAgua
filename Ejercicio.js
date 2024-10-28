@@ -66,13 +66,15 @@ function calcularCostoAgua(consumo) {
 
     return costo;
 }
+function mostrarCostoTotal(consumos) {
+    let total = 0;
 
+    consumos.forEach(consumo => {
+        total += calcularCostoAgua(consumo);
+    });
 
-
-
-
-
-
+    alert('El costo total del consumo de agua es:' + total);
+}
 
 
 function main() {
