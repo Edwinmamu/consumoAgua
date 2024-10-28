@@ -23,4 +23,5 @@ function capturarConsumo() {
   
     return consumos;
   }
+  capturarConsumo ();
   
